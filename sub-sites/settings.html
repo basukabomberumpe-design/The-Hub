@@ -24,6 +24,14 @@
                     <input type="text" placeholder="Title" onkeyup="setTitle(this.value)" class="form">
                 </form>
             </div>
+            <div class="thingy">
+                <h2 style="margin-top: 20px;">Media Chooser</h2>
+                <form onsubmit="return false;">
+                    <button onclick="setmedia(null)">Normal Movies</button>
+                    <button onclick="setmedia(yes)">My Collection</button>
+                </form>
+            </div>
         </div>
         <script>function setTitle(value) {document.title = value || "Google"; localStorage.setItem("title", value)};</script>
+        <script>function setmedia(value) {localStorage.setItem("media", value)};</script>
     </body>
