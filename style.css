@@ -188,6 +188,8 @@
 }
 .dashy {
     background-color: #c66767;
+    border-radius: 10px;
+    text-decoration: none;
 }
 body {
     font-family: "Roboto";
