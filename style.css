@@ -190,6 +190,8 @@
     background-color: #c66767;
     border-radius: 10px;
     text-decoration: none;
+    font-size: 25px;
+    font-weight: 800;
 }
 body {
     font-family: "Roboto";
