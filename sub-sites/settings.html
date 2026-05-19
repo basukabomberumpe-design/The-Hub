@@ -42,6 +42,6 @@
         </div>
         <script>function setTitle(value) {document.title = value || "Google"; localStorage.setItem("title", value)};</script>
         <script>function setmedia(value) {localStorage.setItem("media", value)};</script>
-        <script>function setpanicbutton(value) {localStorage.setItem("panicbutton", value)};</script>
-        <script>function setpaniclink(value) {localStorage.setItem("paniclink", value)};</script>
+        <script>function setpanicbutton(value) {localStorage.setItem("panicbutton", null); localStorage.setItem("panicbutton", value)};</script>
+        <script>function setpaniclink(value) {localStorage.setItem("paniclink", null); localStorage.setItem("paniclink", value)};</script>
     </body>
