@@ -128,9 +128,11 @@
   height: 90px;
   border-radius: 15px;
   margin-top: 10px;
-  transition: 0.2s;
+  transition: 0.3s;
 }
-
+.pluh:hover {
+    transform: scale(1.2);
+}
 .thingys {
   margin-right: auto;
   grid-gap: 2rem;
