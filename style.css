@@ -52,7 +52,6 @@
     outline: none;
     text-decoration: none;
     transition: all 0.3s ease;
-    cursor: url('./assets/cu.png'), auto;
 }
 #sub a span {
     margin-left: 4px;
