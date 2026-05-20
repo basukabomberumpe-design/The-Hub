@@ -192,11 +192,11 @@
     text-decoration: none;
     font-size: 25px;
     font-weight: 800;
+    padding: 10
 }
 body {
     font-family: "Roboto";
     background-color: #5e7594;
     color: white;
-    cursor: url('./assets/cu.png'), auto;
     user-select: none;
 }
