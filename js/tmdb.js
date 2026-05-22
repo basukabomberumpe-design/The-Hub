@@ -2,7 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import fetch from 'node-fetch';
 
-dotenv.config();
+dotenv.config({ path: './assets/tmdb.env' });
 
 const app = express();
 const PORT = process.env.PORT || 3000;
