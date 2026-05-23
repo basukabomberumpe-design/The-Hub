@@ -1,6 +1,7 @@
-export default function handler(request, response) {
-  // Her har Vercel lov til å bruke process.env!
+module.exports = (req, res) => {
   const dashboardVerdi = process.env.ello;
-  response.status(200).json({ verdi: dashboardVerdi });
-}
+  
+  // Send svaret tilbake til nettsiden din
+  res.status(200).json({ verdi: dashboardVerdi || "Variabelen er tom!" });
+};
 console.log(dashboardVerdi)
