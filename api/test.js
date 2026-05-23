@@ -1,2 +1,2 @@
-const something = Process.env.ello
+const something = process.env.ello
 console.log(something)
