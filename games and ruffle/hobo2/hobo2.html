@@ -29,6 +29,17 @@
     <div id="container">
         <embed src="hobo 2 - prison brawl.swf" width="770" height="580" type="application/x-shockwave-flash"></embed>
     </div>
+    <div>
+        <textarea id="textBox" placeholder="password saver input" style="resize: none; overflow: auto"></textarea>
+        <a style="font-weight: bold; font-size: 1rem; color: white;">password holder that saves!</a>
+    </div>
+    <script>
+        const ta = document.getElementById('textBox');
+        ta.value = localStorage.getItem('savedTextt') || '';
+        ta.addEventListener('input', () => {
+        localStorage.setItem('savedTextt', ta.value);
+        });
+    </script>
 </body>
 
 </html>
