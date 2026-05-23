@@ -2,13 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>TMDB Search</title>
+  <title>TMDB Demo</title>
 </head>
 <body>
 
-  <h1>Movie Search</h1>
-
-  <input id="q" placeholder="Search movies..." />
+  <input id="q" placeholder="Search movies" />
   <button id="btn">Search</button>
 
   <ul id="out"></ul>
@@ -17,15 +15,19 @@
     document.getElementById('btn').addEventListener('click', async () => {
       const q = document.getElementById('q').value || 'matrix';
 
-      const res = await fetch(`/.netlify/functions/tmdb?q=${encodeURIComponent(q)}`);
+      const res = await fetch(
+        "https://YOUR-NETLIFY-SITE.netlify.app/.netlify/functions/tmdb?q=" +
+        encodeURIComponent(q)
+      );
+
       const data = await res.json();
 
       const list = document.getElementById('out');
       list.innerHTML = '';
 
-      (data.results || []).forEach(movie => {
+      (data.results || []).forEach(m => {
         const li = document.createElement('li');
-        li.textContent = movie.title;
+        li.textContent = m.title;
         list.appendChild(li);
       });
     });
