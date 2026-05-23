@@ -1,18 +1,28 @@
 // i found this script online. this isnt mine. you can take it if you want
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("../assets/facts.JSON")
+
+  const isGitHubPages = window.location.hostname.includes("github.io");
+  const basePath = isGitHubPages ? "/The-Hub" : "";
+
+  fetch(`${basePath}/assets/facts.json`)
     .then((response) => response.json())
     .then((data) => {
-      const randomQuote = data[Math.floor(Math.random() * data.length)];
-      document.getElementById("fact").innerHTML = randomQuote;
 
-      document.getElementById("fact").addEventListener("click", function () {
+      const factEl = document.getElementById("fact");
+
+      const setRandomFact = () => {
         const randomQuote = data[Math.floor(Math.random() * data.length)];
-        document.getElementById("fact").innerHTML = randomQuote;
-      });
+        factEl.innerHTML = randomQuote;
+      };
+
+      setRandomFact();
+
+      factEl.addEventListener("click", setRandomFact);
+
     })
-    .catch((error) => {
+    .catch(() => {
       document.getElementById("fact").innerHTML =
         "idk what happened something broke";
     });
+
 });
