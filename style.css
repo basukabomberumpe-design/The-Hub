@@ -195,6 +195,26 @@
     font-weight: 800;
     padding: 10
 }
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.linksy {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    transition: all 0.35s ease;
+}
+linksy:hover {
+    transform: scale(1.1);
+}
 body a {
     outline: none;
     text-decoration: none;
