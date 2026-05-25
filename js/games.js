@@ -7,4 +7,4 @@ function gamer(value) {
     } else {
         localStorage.setItem("iscool?", "yes")
     }
-  });};
+  })};
