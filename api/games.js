@@ -1,5 +1,4 @@
 export default function handler(req, res) {
-  res.status(200).json({
-    value: process.env.skomp
-  });
+  const value = process.env.skomp;
+  res.status(200).json({ value });
 }
