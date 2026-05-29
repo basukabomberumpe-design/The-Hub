@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @font-face {
   font-family: "Cat Song";
-  src: url("./fonts/Cat%20Song.otf") format("opentype");
+  src: url("./assets/Cat Song.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
