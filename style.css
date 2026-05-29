@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @font-face {
-    font-family: "Cat Song";
-    src: url("./fonts/Cat Song.otf") format("opentype");
+  font-family: "Cat Song";
+  src: url("./fonts/Cat%20Song.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 .title {
     font-family: "Cat Song";
@@ -225,7 +228,7 @@ body a {
     text-decoration: none;
 }
 body {
-    font-family: Cat Song;
+    font-family: "Cat Song";
     background-color: #5e7594;
     color: white;
     user-select: none;
