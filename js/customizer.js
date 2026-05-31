@@ -11,5 +11,5 @@ if (idk === null) {
 if (favi === null) {
     setfavicon("https://www.gstatic.com/images/branding/searchlogo/ico/favicon.ico");
 } else {
-    setfavicon("favi")
+    setfavicon(favi)
 }
